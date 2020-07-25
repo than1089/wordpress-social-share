@@ -9,7 +9,7 @@ class ThanNgo_Social_Share_Setting {
 	}
 
 	function enqueue_jquery_ui_scripts() {
-        wp_enqueue_script( 'jquery-ui-sortable' );
+		wp_enqueue_script( 'jquery-ui-sortable' );
 	}
 
 	function social_share_add_admin_menu(  ) { 
@@ -198,18 +198,18 @@ class ThanNgo_Social_Share_Setting {
 		</form>
 		<script type="text/javascript">
 			jQuery( function($) {
-			    $( ".sortable-networks" ).sortable({
-			    	placeholder: "ui-state-highlight"
-			    }).disableSelection();
+				$( ".sortable-networks" ).sortable({
+					placeholder: "ui-state-highlight"
+				}).disableSelection();
 
-			    $('#using-custom-color').change(function() {
-			    	var input = $(this);
-			    	if (input.prop('checked')) {
-			    		input.parents('tr').next().show();
-			    	} else {
-			    		input.parents('tr').next().hide();
-			    	}
-			    }).trigger('change');
+				$('#using-custom-color').change(function() {
+					var input = $(this);
+					if (input.prop('checked')) {
+						input.parents('tr').next().show();
+					} else {
+						input.parents('tr').next().hide();
+					}
+				}).trigger('change');
 			 } );
 		</script>
 		<style type="text/css">

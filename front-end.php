@@ -10,8 +10,8 @@ class ThanNgo_Social_Share_Frontend {
 	}
 
 	function enqueue_scripts() {
-        wp_enqueue_style( 'social-share' , plugin_dir_url( __FILE__ ) . 'social-share.css' );
-        wp_enqueue_script( 'social-share' , plugin_dir_url( __FILE__ ) . 'social-share.js', array( 'jquery' ) );
+		wp_enqueue_style( 'social-share' , plugin_dir_url( __FILE__ ) . 'social-share.css' );
+		wp_enqueue_script( 'social-share' , plugin_dir_url( __FILE__ ) . 'social-share.js', array( 'jquery' ) );
 	}
 
 	function init_frontend_social_share() {
