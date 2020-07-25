@@ -10,13 +10,10 @@ class ThanNgo_Social_Share_Setting {
 
 	function enqueue_jquery_ui_scripts() {
         wp_enqueue_script( 'jquery-ui-sortable' );
-
 	}
 
 	function social_share_add_admin_menu(  ) { 
-
 		add_menu_page( 'Social Share', 'Social Share', 'manage_options', 'social_share', array( $this, 'social_share_options_page' ) );
-
 	}
 
 
@@ -102,7 +99,7 @@ class ThanNgo_Social_Share_Setting {
 		$options = get_option( 'social_share_settings' );
 		$social_networks = array( 'Facebook', 'Twitter', 'Pinterest', 'LinkedIn', 'Whatsapp' );
 
-		$merged_social_networks = array_merge( $options['social_share_networks'], array_combine( $social_networks, $social_networks ) );
+		$merged_social_networks = array_merge( (array)$options['social_share_networks'], array_combine( $social_networks, $social_networks ) );
 		$social_networks = array_keys($merged_social_networks);
 		?>
 		<div class="sortable-networks">
