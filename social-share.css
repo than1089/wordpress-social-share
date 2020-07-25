@@ -1,7 +1,7 @@
 ul.tn-social-share {
 	list-style: none;
 	text-align: inherit;
-	margin: 15px;
+	margin: 10px;
 	line-height: 1;
 }
 ul.tn-social-share li {
@@ -11,9 +11,6 @@ ul.tn-social-share li {
 
 ul.tn-social-share li:last-child {
 	margin: 0;
-}
-.post-meta .tn-social-share-wrapper {
-	display: none;
 }
 /* Size */
 ul.tn-social-share.size-small {
@@ -72,6 +69,9 @@ ul.tn-social-share.custom-color svg {
 	background-color: #efefef;
 	box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
 	z-index: 999;
+}
+.tn-social-share-wrapper.inside-the-thumbnail {
+	transform: translateY(calc(-100% - 20px));
 }
 .tn-social-share-wrapper.floating-left ul {
 	display: flex;

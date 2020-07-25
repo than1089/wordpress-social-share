@@ -162,7 +162,7 @@ class ThanNgo_Social_Share_Setting {
 		$positions = array(
 			'below_title'            => __( 'Below Title', 'tn-social-share' ),
 			'floating_left'          => __( 'Floating Left', 'tn-social-share' ),
-			'after_post_content'     => __( 'After Post Content', 'tn-social-share' ),
+			'after_post_content'     => __( 'After The Post Content', 'tn-social-share' ),
 			'inside_featured_image'  => __( 'Inside The Feature Image', 'tn-social-share' ),
 		);
 		?>
