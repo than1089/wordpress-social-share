@@ -14,11 +14,14 @@ class ThanNgo_Social_Share_Frontend {
 	}
 
 	function init_frontend_social_share() {
+		if ( !is_singular() ) {
+			return;
+		}
 
 		$options = get_option( 'social_share_settings' );
 
 		$enable_post_types = (array)$options['social_share_post_types'];
-		if ( !isset($enable_post_types[get_post_type()]) || !is_singular() ) {
+		if ( !isset($enable_post_types[get_post_type()]) ) {
 			return;
 		}
 
