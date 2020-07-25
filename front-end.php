@@ -1,7 +1,6 @@
 <?php
 
 class ThanNgo_Social_Share_Frontend {
-	public $post_title;
 
 	function __construct() {
 		add_action( 'wp', array( $this, 'init_frontend_social_share') );
@@ -15,7 +14,7 @@ class ThanNgo_Social_Share_Frontend {
 	}
 
 	function init_frontend_social_share() {
-		$this->post_title = get_the_title();
+
 		$options = get_option( 'social_share_settings' );
 
 		$enable_post_types = (array)$options['social_share_post_types'];
@@ -73,9 +72,9 @@ class ThanNgo_Social_Share_Frontend {
 
 		$size = $setting_size ? $setting_size : 'small';
 
-		$post_url = urlencode(get_the_permalink());
-		$post_thumbnail = urlencode(get_the_post_thumbnail_url());
-		$post_title = $this->post_title;
+		$post_url = urlencode( get_the_permalink() );
+		$post_title = urlencode( get_the_title() );
+		$post_thumbnail = urlencode( get_the_post_thumbnail_url() );
 
 		ob_start();
 		?>
