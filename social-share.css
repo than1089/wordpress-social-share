@@ -1,0 +1,85 @@
+ul.tn-social-share {
+	list-style: none;
+	text-align: inherit;
+	margin: 15px;
+	line-height: 1;
+}
+ul.tn-social-share li {
+	display: inline-block;
+	margin: 0 10px 0 0;
+}
+
+ul.tn-social-share li:last-child {
+	margin: 0;
+}
+.post-meta .tn-social-share-wrapper {
+	display: none;
+}
+/* Size */
+ul.tn-social-share.size-small {
+	font-size: 25px;
+}
+ul.tn-social-share.size-small li svg {
+	width: 25px;
+	height: 25px;
+}
+ul.tn-social-share.size-medium {
+	font-size: 35px;
+}
+ul.tn-social-share.size-medium li svg {
+	width: 35px;
+	height: 35px;
+}
+ul.tn-social-share.size-large {
+	font-size: 50px;
+}
+ul.tn-social-share.size-large li svg {
+	width: 50px;
+	height: 50px;
+}
+
+/* Color */
+ul.tn-social-share:not(.custom-color) .share-facebook svg {
+	fill: #3b5998;
+	color: #3b5998;
+}
+ul.tn-social-share:not(.custom-color) .share-twitter svg {
+	fill: #00acee;
+	color: #00acee;
+}
+ul.tn-social-share:not(.custom-color) .share-pinterest svg {
+	fill: #E60023;
+	color: #E60023;
+}
+ul.tn-social-share:not(.custom-color) .share-linkedin svg {
+	fill: #0e76a8;
+	color: #0e76a8;
+}
+ul.tn-social-share:not(.custom-color) .share-whatsapp svg {
+	fill: #4AC959;
+	color: #4AC959;
+}
+ul.tn-social-share.custom-color svg {
+	fill: inherit;
+	color: inherit;
+}
+
+/* Position */
+.tn-social-share-wrapper.floating-left {
+	position: fixed;
+	left: 0;
+	top: 20%;
+	background-color: #efefef;
+	box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+	z-index: 999;
+}
+.tn-social-share-wrapper.floating-left ul {
+	display: flex;
+	flex-direction: column;
+}
+.tn-social-share-wrapper.floating-left ul li {
+	margin: 0 0 10px;
+}
+.tn-social-share-wrapper.floating-left ul li:last-child {
+	margin: 0;
+}
